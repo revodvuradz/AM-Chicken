@@ -1,0 +1,8 @@
+{
+    "eslint.validate": ["javascript"],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "css.customData": [".vscode/css_custom_data.json"],
+    "editor.formatOnSave": true
+}
