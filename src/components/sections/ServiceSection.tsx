@@ -27,12 +27,12 @@ type ServiceSectionProps = {
 };
 
 export const kemasan = [
-    { icon: BagHappy, iconColor: "#eab308", label: "Kemasan Makanan" },
-    { icon: Bookmark, iconColor: "#3B82F6", label: "Kemasan Produk" },
-    { icon: Box, iconColor: "#862AF3", label: "Hard Box" },
-    { icon: Gift, iconColor: "#35BB5D", label: "Corrugated Box" },
-    { icon: Sticker, iconColor: "#FF8614", label: "Stiker" },
-    { icon: Bag2, iconColor: "#EF4444", label: "Paperbag" },
+    { icon: BagHappy, iconColor: "#eab308", label: "Ayam Joper" },
+    { icon: Bookmark, iconColor: "#3B82F6", label: "Ayam Arab" },
+    { icon: Box, iconColor: "#862AF3", label: "Ayam Kampung" },
+    { icon: Gift, iconColor: "#35BB5D", label: "Telur Ayam Kampung" },
+    { icon: Sticker, iconColor: "#FF8614", label: "Ayam Potong Segar" },
+    { icon: Bag2, iconColor: "#EF4444", label: "Ayam Potong Segar" },
 ];
 
 export const otherProducts = [

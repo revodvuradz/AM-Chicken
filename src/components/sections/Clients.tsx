@@ -33,13 +33,13 @@ const Clients = () => {
 
     return (
         <div className="flex flex-col items-center gap-[34px]">
-            <h1 className="text-center font-outfit text-[3rem] font-semibold text-orange-500 md:text-[4rem]">
+            <h1 className="text-center font-outfit text-[3rem] font-semibold text-orange-300 md:text-[4rem]">
                 Client<span className="text-neutral-950"> Kami</span>
             </h1>
             <div className="flex flex-wrap content-center items-center justify-center gap-8 md:gap-16 ">
                 {items.map(
                     ({ id, name, imageSrc, basic }) =>
-                        basic?.isActive && <Image key={id} src={imageSrc?.md || "https://via.placeholder.com/119x56"} alt={`${name} logo`} width={194} height={90} className="h-auto w-auto" />
+                        basic?.isActive && <Image key={id} src={imageSrc?.md || "https://via.placeholder.com/119x56"} alt={`${name} logo`} width={194} height={90} className="size-auto" />
                 )}
             </div>
         </div>

@@ -68,7 +68,7 @@ const ProductDetails = (params: { slug: string }) => {
     return (
         <>
             <div className="flex items-start justify-between">
-                {isLoading ? <Skeleton className="w-[50%] brightness-75" /> : <h1 className="font-outfit text-5xl/normal font-medium text-neutral-950">{category?.name || "-"}</h1>}
+                {isLoading ? <Skeleton className="w-1/2 brightness-75" /> : <h1 className="font-outfit text-5xl/normal font-medium text-neutral-950">{category?.name || "-"}</h1>}
                 <Button onClick={() => router.back()}>
                     <CloseCircle size="34" color="#475569" />
                 </Button>
@@ -76,7 +76,7 @@ const ProductDetails = (params: { slug: string }) => {
             {isLoading ? (
                 <>
                     <Skeleton className="w-full" />
-                    <Skeleton className="w-[80%]" />
+                    <Skeleton className="w-4/5" />
                 </>
             ) : (
                 <p className="ts-lg-normal font-normal text-neutral-600">{category?.description || "-"}</p>

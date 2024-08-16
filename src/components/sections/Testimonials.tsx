@@ -9,6 +9,8 @@ import Skeleton from "@/components/ui/Skeleton";
 import useSwr from "@/hooks/useSwr";
 import { ArrowLeft, ArrowRight } from "@/lib/icons";
 import imageTesti1 from "@public/images/home/testimonials/Testi_1.png";
+import imageTesti2 from "@public/images/home/testimonials/Testi_2.png";
+import imageTesti3 from "@public/images/home/testimonials/Testi_3.png";
 
 // eslint-disable-next-line import/order
 import { Splide, SplideSlide } from "@splidejs/react-splide";
@@ -23,7 +25,7 @@ const TestimonialCard = ({ name, bio, message, imageSrc }: Testimonial) => (
             <div className="flex grow">
                 <blockquote className="line-clamp-5 grow font-normal text-neutral-950">{message || "-"}</blockquote>
             </div>
-            <p className="font-semibold text-orange-600">
+            <p className="font-semibold text-orange-300">
                 {name || "-"}
                 <span className="text-neutral-600"> - {bio || "-"}</span>
             </p>
@@ -31,30 +33,73 @@ const TestimonialCard = ({ name, bio, message, imageSrc }: Testimonial) => (
     </SplideSlide>
 );
 
-const Testimonials = () => {
-    const gqlQuery = gql`
-        query getTestimonies($limit: Int) {
-            testimonies(limit: $limit) {
-                items {
-                    id
-                    name
-                    bio
-                    message
-                    imageSrc {
-                        sm
-                    }
-                    basic {
-                        isActive
-                    }
-                }
-            }
-        }
-    `;
+const mockTestimonies = {
+    items: [
+        {
+            id: "1",
+            name: "Ibu Sinta",
+            bio: "Pelanggan dari Surabaya",
+            message: "Daging ayam dari AM Chicken benar-benar berbeda! Teksturnya lebih kenyal dan rasanya begitu autentik.",
+            imageSrc: {
+                sm: imageTesti1.src,
+            },
+            basic: {
+                isActive: true,
+            },
+        },
+        {
+            id: "2",
+            name: "Bapak Arif",
+            bio: "Pelanggan dari Probolinggo",
+            message: "Ayam organik AM Chicken terasa lebih segar dan lezat! Sangat cocok untuk keluarga saya.",
+            imageSrc: {
+                sm: imageTesti2.src,
+            },
+            basic: {
+                isActive: true,
+            },
+        },
+        {
+            id: "3",
+            name: "Bu Rani",
+            bio: "Pelanggan dari Malang",
+            message: "Telur ayam kampung AM Chicken selalu menjadi pilihan utama saya untuk sarapan sehat.",
+            imageSrc: {
+                sm: imageTesti3.src,
+            },
+            basic: {
+                isActive: true,
+            },
+        },
+    ],
+};
 
-    const { data, isLoading } = useSwr(gqlQuery);
+// const gqlQuery = gql`
+//     query getTestimonies($limit: Int) {
+//         testimonies(limit: $limit) {
+//             items {
+//                 id
+//                 name
+//                 bio
+//                 message
+//                 imageSrc {
+//                     sm
+//                 }
+//                 basic {
+//                     isActive
+//                 }
+//             }
+//         }
+//     }
+// `;
+
+const Testimonials = () => {
+    // const { data, isLoading } = useSwr(gqlQuery);
+    const data = mockTestimonies;
+    const isLoading = false;
 
     const items = useMemo<Testimonial[]>(() => {
-        return data?.testimonies.items || [];
+        return data?.items || [];
     }, [data]);
 
     const testimonies = items.filter((testimony) => testimony?.basic?.isActive);
@@ -80,13 +125,13 @@ const Testimonials = () => {
                     <h1 className="items-center text-center font-outfit text-[3rem] font-semibold text-neutral-950 md:text-[4rem]">
                         Apa Kata<span className="text-info-500"> Mereka</span>?
                     </h1>
-                    <p className="text-center font-inter text-xl font-normal text-neutral-600 md:text-2xl">Ratusan pimpinan perusahaan merasa puas dan terbantu dengan layanan kamila printing</p>
+                    <p className="text-center font-inter text-xl font-normal text-neutral-600 md:text-2xl">Ratusan pimpinan perusahaan merasa puas dan terbantu dengan layanan AM Chicken</p>
                 </div>
 
                 <div className="flex h-[296px] w-[1344px] flex-row items-center justify-center gap-5">
                     <Button aria-label="previous slide" iconOnly className="hidden bg-white drop-shadow-md lg:flex" onClick={prevSlide}>
                         <span className="sr-only">Previous Slide</span>
-                        <ArrowLeft size={24} color="#0EA5E9" variant="Outline" />
+                        <ArrowLeft size={24} color="#35bb5d" variant="Outline" />
                     </Button>
                     <div className="flex w-full flex-row items-center justify-center gap-4 overflow-hidden">
                         {isLoading ? (
@@ -118,7 +163,7 @@ const Testimonials = () => {
                     </div>
                     <Button aria-label="next slide" iconOnly className="hidden bg-white drop-shadow-md lg:flex" onClick={nextSlide}>
                         <span className="sr-only">Next Slide</span>
-                        <ArrowRight size={24} color="#0EA5E9" variant="Outline" />
+                        <ArrowRight size={24} color="#35bb5d" variant="Outline" />
                     </Button>
                 </div>
             </div>

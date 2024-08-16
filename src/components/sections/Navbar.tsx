@@ -4,7 +4,7 @@ import Button from "@/components/ui/Button";
 import { mc } from "@/lib/functions";
 import { ROUTES } from "@/lib/functions/constants";
 import { HambergerMenu, Whatsapp } from "@/lib/icons";
-import imageLogo from "@public/images/Logo.png";
+import imageLogo from "@public/images/AMChickenLogo.png";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -87,7 +87,7 @@ const Navbar = () => {
     return (
         <nav className="relative top-0 z-50 flex h-16 w-full max-w-screen-2xl items-center justify-between px-4 py-3.5 md:px-4">
             <Link href={ROUTES.HOME} className="focus:border-primary-300 focus:outline-none focus:ring">
-                <Image src={imageLogo.src} width={110} height={40} alt="Kamila Printing Logo" priority />
+                <Image src={imageLogo.src} width={110} height={40} alt="AM Chicken Logo" priority />
             </Link>
             <Button
                 role="button"
@@ -112,7 +112,7 @@ const Navbar = () => {
                                     href={href}
                                     className={mc(
                                         "rounded-full h-full cursor-pointer items-center text-center py-2.5 px-4 lg:px-8 font-inter duration-100",
-                                        "focus:outline-none focus:ring focus:border-blue-300",
+                                        "focus:outline-none focus:ring focus:border-primary-200",
                                         isActive ? "bg-info-100 font-bold text-info-600" : "text-neutral-500"
                                     )}
                                 >

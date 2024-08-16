@@ -15,7 +15,7 @@ const UnderlinedTitle = ({ title }: HeaderSectionProps) => {
     return (
         <div className="text-center font-outfit text-4xl font-medium text-neutral-950 md:text-5xl">
             <span>{restOfTitle} </span>
-            <span className="underline decoration-secondary-600 decoration-4 underline-offset-[12px]">{lastWord}</span>
+            <span className="underline decoration-danger-400 decoration-4 underline-offset-[12px]">{lastWord}</span>
         </div>
     );
 };

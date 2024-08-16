@@ -1,15 +1,20 @@
 /* eslint-disable tailwindcss/no-arbitrary-value */
 "use client";
-import type { Slider } from "@/types";
+// import type { Slider } from "@/types";
 
 import CarouselCard from "@/components/cards/CarouselCard";
 import Button from "@/components/ui/Button";
 import Skeleton from "@/components/ui/Skeleton";
-import useSwr from "@/hooks/useSwr";
+// import useSwr from "@/hooks/useSwr";
+import imageCarousel1 from "@public/images/home/carousel/ayam-organik-1.jpg";
+// import imageCarousel2 from "@public/images/home/carousel/ayam-organik-2.jpg";
+import imageCarousel3 from "@public/images/home/carousel/ayam-organik-3.jpg";
+import imageCarousel4 from "@public/images/home/carousel/ayam-organik-4.jpg";
+// import imageCarousel5 from "@public/images/home/carousel/ayam-organik-5.jpg";
 
 import "@splidejs/react-splide/css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import { gql } from "graphql-request";
+// import { gql } from "graphql-request";
 import { ArrowLeft, ArrowRight } from "iconsax-react";
 import React, { useMemo, useRef } from "react";
 
@@ -27,29 +32,79 @@ const Carousel = () => {
         }
     };
 
-    const gqlQuery = gql`
-        query getContentSliders($keyword: String) {
-            contentSliders(keyword: $keyword, limit: 99) {
-                items {
-                    id
-                    name
-                    description
-                    href
-                    image {
-                        original
-                    }
-                    basic {
-                        isActive
-                    }
-                }
-            }
-        }
-    `;
+    // const gqlQuery = gql`
+    //     query getContentSliders($keyword: String) {
+    //         contentSliders(keyword: $keyword, limit: 99) {
+    //             items {
+    //                 id
+    //                 name
+    //                 description
+    //                 href
+    //                 image {
+    //                     original
+    //                 }
+    //                 basic {
+    //                     isActive
+    //                 }
+    //             }
+    //         }
+    //     }
+    // `;
 
-    const { data, isLoading } = useSwr(gqlQuery);
+    // const { data, isLoading } = useSwr(gqlQuery);
 
-    const items = useMemo<Slider[]>(() => {
-        return data?.contentSliders.items || [];
+    // const items = useMemo<Slider[]>(() => {
+    //     return data?.contentSliders.items || [];
+    // }, [data]);
+
+    const staticData = {
+        contentSliders: {
+            items: [
+                {
+                    id: "1",
+                    name: "Slider 1",
+                    description: "Ayam organik berkualitas dari AM Chicken – Sehat, lezat, alami.",
+                    href: "/slider-1",
+                    image: {
+                        original: imageCarousel1.src,
+                    },
+                    basic: {
+                        isActive: true,
+                    },
+                },
+                {
+                    id: "2",
+                    name: "Slider 2",
+                    description: "Nikmati rasa asli ayam organik untuk gaya hidup sehat.",
+                    href: "/slider-2",
+                    image: {
+                        original: imageCarousel3.src,
+                    },
+                    basic: {
+                        isActive: true,
+                    },
+                },
+                {
+                    id: "3",
+                    name: "Slider 2",
+                    description: "Kualitas terbaik dari peternakan ke meja Anda.",
+                    href: "/slider-2",
+                    image: {
+                        original: imageCarousel4.src,
+                    },
+                    basic: {
+                        isActive: true,
+                    },
+                },
+                // Add more slider items as needed
+            ],
+        },
+    };
+    const data = staticData;
+    const isLoading = false; // Since the data is static, set isLoading to false
+
+    const items = useMemo(() => {
+        return data.contentSliders.items || [];
     }, [data]);
 
     return (
@@ -112,11 +167,11 @@ const Carousel = () => {
                         <div className="hidden h-fit w-full items-center justify-between transition duration-500 ease-in-out md:flex">
                             <Button aria-label="Previous slide" iconOnly className="pointer-events-auto bg-white drop-shadow-md" onClick={prevSlide}>
                                 <span className="sr-only">Previous Slide</span>
-                                <ArrowLeft size={24} color="#0EA5E9" variant="Outline" />
+                                <ArrowLeft size={24} color="#35bb5d" variant="Outline" />
                             </Button>
                             <Button aria-label="Next slide" iconOnly className="pointer-events-auto bg-white drop-shadow-md" onClick={nextSlide}>
                                 <span className="sr-only">Next Slide</span>
-                                <ArrowRight size={24} color="#0EA5E9" variant="Outline" />
+                                <ArrowRight size={24} color="#35bb5d" variant="Outline" />
                             </Button>
                         </div>
                     </div>

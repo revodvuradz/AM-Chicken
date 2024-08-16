@@ -16,7 +16,7 @@ const Testimonials = dynamic(() => import("@/components/sections/Testimonials"))
 
 export const metadata: Metadata = {
     title: {
-        absolute: "Home | Kamila Printing",
+        absolute: "Home | AM Chicken",
     },
 };
 
@@ -27,8 +27,7 @@ export default function Page() {
 
             <Advantages />
 
-            <ServiceSection title="Kemasan" services={kemasan} />
-            <ServiceSection title="Other Products" services={otherProducts} />
+            <ServiceSection title="Produk" services={kemasan} />
 
             <Testimonials />
 

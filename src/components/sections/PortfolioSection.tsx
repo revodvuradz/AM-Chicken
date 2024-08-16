@@ -109,18 +109,18 @@ const PortfolioSection = () => {
                         </div>
                         <div className="flex w-full max-w-[548px] flex-col gap-8">
                             <div className="relative flex flex-col items-start gap-[18px]">
-                                <Image src={imageMug} width={99} height={103} alt="Mug Mockup" className="absolute -right-5 z-0 h-auto w-auto" />
-                                <span className="ts-title-3 font-outfit font-semibold text-orange-600">Our Work</span>
+                                <Image src={imageMug} width={99} height={103} alt="Mug Mockup" className="absolute -right-5 z-0 size-auto" />
+                                <span className="ts-title-3 font-outfit font-semibold text-orange-300">Agen & Reseller</span>
                                 <h1 className="z-10 font-outfit text-[64px] font-medium leading-none text-neutral-700">
-                                    Portfolio<span className="text-info-500"> Kami</span>
+                                    Gabung Bersama<span className="text-info-500"> Kami</span>
                                 </h1>
                             </div>
                             <p className="ts-lg-normal font-inter font-normal text-neutral-600">
-                                Kamila Printing, a solutions-driven graphic communications company with a history of success connecting brands with consumers.
+                                Jadilah agen atau reseller AM Chicken. Dapatkan dukungan penuh dan akses ke produk ayam organik yang diminati pasar. Hubungi kami untuk bergabung!
                             </p>
                             <Button asLink size="large" style="outline" href={ROUTES.PORTFOLIO} className="text-primary-500">
-                                Lihat Portfolio
-                                <ArrowRight color="#3B82F6" size={24} variant="Outline" />
+                                Selengkapnya
+                                <ArrowRight color="#35bb5d" size={24} variant="Outline" />
                             </Button>
                         </div>
                     </div>

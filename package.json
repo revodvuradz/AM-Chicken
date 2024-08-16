@@ -1,7 +1,7 @@
 {
-    "name": "kamila-printing",
+    "name": "am-chicken",
     "version": "1.0.0",
-    "description": "Website for Kamila Printing",
+    "description": "Website for AM Chicken",
     "main": "index.js",
     "repository": "https://gitlab.com/aksamedia/kamila-printing/kamila-front-end.git",
     "bugs": "https://gitlab.com/aksamedia/kamila-printing/kamila-front-end.git",
@@ -16,7 +16,8 @@
     "contributors": [],
     "scripts": {
         "dev": "start http://localhost:3000 && next dev",
-        "build": "next build",
+        "dev:static": "serve ./out",
+        "build": "next build && next export",
         "start": "next start",
         "lint": "next lint",
         "git:prepare": "husky install"
@@ -59,6 +60,7 @@
         "lint-staged": "^14.0.1",
         "postcss": "^8.4.31",
         "prettier": "^3.0.3",
+        "serve": "^14.2.3",
         "tailwindcss": "^3.3.3",
         "ts-node": "^10.9.1",
         "typescript": "5.2.2"

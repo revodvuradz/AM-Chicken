@@ -12,7 +12,7 @@ const CTA = () => {
             <div className="flex w-full flex-col items-center justify-between gap-6 rounded-[18px] bg-white p-[30px] drop-shadow-xl md:flex-row">
                 <div className="flex w-full grow flex-col items-start gap-[18px]">
                     <span className="ts-title-3 font-outfit font-semibold text-info-500">Get In Touch</span>
-                    <h1 className="font-outfit text-4xl font-bold leading-normal text-orange-500 md:text-[40px]">
+                    <h1 className="font-outfit text-4xl font-bold leading-normal text-orange-300 md:text-[40px]">
                         Konsultasikan<span className="text-neutral-950"> Kebutuhan Cetak Anda</span>
                     </h1>
                     <p className="ts-regular-normal font-inter font-normal text-neutral-600">
@@ -29,7 +29,13 @@ const CTA = () => {
                     </div>
                 </div>
                 <div className="aspect-video w-full rounded-2xl">
-                    <Image src={imageCTA.src} alt="CTA" width={1920} height={1080} className="rounded-2xl bg-gray-200 object-cover object-center" />
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.0637054756153!2d113.4302464!3d-7.783070599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7010025bda8d5%3A0x19566c8c2cc4510c!2sAM%20CHICKEN!5e0!3m2!1sid!2sid!4v1723789905877!5m2!1sid!2sid"
+                        width="100%"
+                        height="100%"
+                        className="border-0 object-cover object-center"
+                        loading="lazy"
+                    ></iframe>
                 </div>
             </div>
         </section>
