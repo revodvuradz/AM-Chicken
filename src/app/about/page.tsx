@@ -33,7 +33,7 @@ export default function Page() {
         <>
             <HeaderSection title="Tentang AM Chicken" />
             <section className="flex w-full max-w-screen-2xl flex-col items-center justify-center gap-5 px-4 md:px-12 lg:flex-row lg:items-start">
-                <Image src={imageHero.src} alt="Hero Image" width={662} height={623} className="lg:w-1/2" priority />
+                <Image src={imageHero.src} alt="Hero Image" width={662} height={623} className="lg:w-1/2 animate-fade-down" priority />
                 <div className="flex flex-col items-center gap-6 lg:w-1/2">
                     <h1 className="font-outfit text-[3rem] font-medium leading-normal text-neutral-950 md:text-[4rem]">
                         <span className="text-orange-300">Nikmat</span> Rasanya, <span className="text-info-500">Sehat</span> Tubuhnya

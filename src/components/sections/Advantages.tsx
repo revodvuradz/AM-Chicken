@@ -91,17 +91,17 @@ const Advantages = () => {
         <section className="mx-4 flex w-full max-w-screen-2xl flex-col gap-10 md:mx-12">
             <div className="relative mx-4 flex flex-row gap-8 md:mx-12">
                 <div className="flex flex-col justify-between gap-2">
-                    <span className="font-outfit text-3xl/6 font-semibold text-info-500">Why Choose Us</span>
-                    <h1 className="font-outfit text-5xl font-medium text-neutral-700 md:text-7xl">
-                        Mengapa Memilih <span className="font-outfit text-orange-300">AM Chicken</span>
+                    <span className="font-outfit text-3xl/6 font-semibold text-info-500 animate-fade-down animate-delay-200">Why Choose Us</span>
+                    <h1 className="font-outfit text-5xl font-medium text-neutral-700 md:text-7xl animate-fade-down animate-delay-[400ms]">
+                        Mengapa Memilih <span className="font-outfit text-orange-300 animate-fade-down animate-delay-[600ms]">AM Chicken</span>
                     </h1>
                 </div>
-                <Image src="images/bg-deco-green.svg" width={99} height={103} alt="Mug" className="absolute right-0 top-0 -z-10 size-auto" />
+                <Image src="images/bg-deco-green.svg" width={99} height={103} alt="Mug" className="absolute right-0 top-0 -z-10 size-auto animate-fade animate-delay-700" />
             </div>
             <div className="mx-4 grid grid-cols-1 gap-4 md:mx-12 md:grid-cols-2 lg:grid-cols-4">
                 {isLoading
                     ? Array.from({ length: 4 }).map((_, index) => (
-                          <div key={index} className="flex h-72 w-full flex-col gap-9 rounded-xl border border-neutral-200 bg-white p-7">
+                          <div key={index} className="flex h-72 w-full flex-col gap-9 rounded-xl border border-neutral-200 bg-white p-7 animate-fade-up">
                               <Skeleton className="aspect-square w-16" />
                               <div className="relative flex flex-col items-start gap-4">
                                   <Skeleton className="w-32 brightness-75" />

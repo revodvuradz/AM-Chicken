@@ -203,6 +203,7 @@ module.exports = /** @satisfies {import('tailwindcss').Config} */ ({
     },
     plugins: [
         require("@tailwindcss/typography"),
+        require('tailwindcss-animated'),
         plugin(({ addBase, addComponents }) => {
             addBase({
                 "html, body": {

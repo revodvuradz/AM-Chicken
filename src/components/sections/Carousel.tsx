@@ -108,7 +108,7 @@ const Carousel = () => {
     }, [data]);
 
     return (
-        <div className="relative h-fit max-w-screen-2xl items-center justify-center overflow-hidden">
+        <div className="relative h-fit max-w-screen-2xl items-center justify-center overflow-hidden animate-fade-left animate-delay-100">
             {isLoading ? (
                 <div className="flex h-fit w-full max-w-screen-2xl flex-row items-center justify-center gap-4 overflow-hidden">
                     {Array.from({ length: 3 }).map((_, index) => (
