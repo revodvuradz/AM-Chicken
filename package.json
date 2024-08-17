@@ -3,14 +3,14 @@
     "version": "1.0.0",
     "description": "Website for AM Chicken",
     "main": "index.js",
-    "repository": "https://gitlab.com/aksamedia/kamila-printing/kamila-front-end.git",
-    "bugs": "https://gitlab.com/aksamedia/kamila-printing/kamila-front-end.git",
+    "repository": "https://github.com/revodvuradz/AM-Chicken",
+    "bugs": "https://github.com/revodvuradz/AM-Chicken",
     "author": {
         "name": "Dzaki Yusuf Izzudin",
         "email": "Dzaki.yusuf@gmail.com",
-        "url": "https://aksamedia.co.id"
+        "url": "https://dza.one"
     },
-    "homepage": "https://aksamedia.co.id",
+    "homepage": "https://dza.one",
     "license": "MIT",
     "private": true,
     "contributors": [],

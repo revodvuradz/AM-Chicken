@@ -1,8 +1,8 @@
-# Kamila Printing Front End
+# AM Chicken Front End
 
 [![Vercel Deployment](https://img.shields.io/badge/Deployment-Live-brightgreen?style=flat&logo=vercel)](https://kamilaprinting.vercel.app) 
 
-https://kamilaprinting.vercel.app
+https://amchicken.vercel.app
  
 This repository serves as a Next.js template equipped with preconfigured settings and options for rapid development and code consistency. It is intended to be used as a starting point for new projects.
 
@@ -48,9 +48,6 @@ This repository serves as a Next.js template equipped with preconfigured setting
 
 2. Publish Directory = .next
 
-3. Add Environment Variables:
-Key=NEXT_PUBLIC_API_URL
-Value=https://api-kamila-dev.aksamedia.co.id
 
 ## Configuration
 

@@ -24,7 +24,7 @@ const Gallery = () => {
                         <Image
                             src={imageGallery1.src}
                             sizes="(min-width: 1520px) 435px, (min-width: 780px) calc(30.56vw - 23px), calc(100vw - 36px)"
-                            alt="kamila employee printing"
+                            alt="am chicken employee printing"
                             fill
                             className="rounded-[14px] bg-gray-200 object-cover object-center"
                         />
@@ -37,7 +37,7 @@ const Gallery = () => {
                         <Image
                             src={imageGallery2.src}
                             sizes="(min-width: 1520px) 435px, (min-width: 780px) calc(30.56vw - 23px), calc(100vw - 36px)"
-                            alt="kamila employee printing"
+                            alt="am chicken employee printing"
                             fill
                             className="rounded-[14px] bg-gray-200 object-cover object-center"
                         />
@@ -70,7 +70,7 @@ const Gallery = () => {
                         <Image
                             src={imageGallery4.src}
                             sizes="(min-width: 1520px) 435px, (min-width: 780px) calc(30.56vw - 23px), calc(100vw - 36px)"
-                            alt="photo of kamila employee printing"
+                            alt="photo of am chicken employee"
                             fill
                             className="rounded-[14px] bg-gray-200 object-cover object-center"
                         />

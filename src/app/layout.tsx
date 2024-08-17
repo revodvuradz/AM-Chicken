@@ -28,7 +28,8 @@ export const metadata: Metadata = {
     openGraph: {
         type: "website",
         title: "AM Chicken | Lezat Dagingnya, Sehat Tubuhnya",
-        description: "KAMILA, perusahaan percetakan terkemuka, menawarkan layanan cetak berkualitas tinggi. Fasilitas modern dan efisiensi tinggi untuk kepuasan pelanggan.",
+        description:
+            "AM Chicken adalah usaha peternakan ayam yang dikelola oleh Pondok Pesantren Nurul Iman di Probolinggo. Kami berfokus pada produksi ayam organik yang sehat, lezat, dan berkualitas tinggi.",
         images: [
             {
                 url: "/images/AMChickenLogo 1.png",
@@ -38,9 +39,9 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "AM Chicken | Premium Giftbox, Printing & Packaging",
-        description: "KAMILA, perusahaan percetakan terkemuka, menawarkan layanan cetak berkualitas tinggi. Fasilitas modern dan efisiensi tinggi untuk kepuasan pelanggan.",
-        images: ["https://res.cloudinary.com/dpzpaebgz/image/upload/v1702050444/kamila-printing.png"],
+        title: "AM Chicken | AM Chicken | Lezat Dagingnya, Sehat Tubuhnya",
+        description: "AM Chicken adalah usaha peternakan ayam yang dikelola oleh Pondok Pesantren Nurul Iman di Probolinggo. Kami berfokus pada produksi ayam organik yang sehat, lezat, dan berkualitas tinggi.",
+        images: ["images/AMChickenLogo 1.png"],
     },
 };
 
