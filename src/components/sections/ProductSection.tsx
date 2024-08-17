@@ -220,7 +220,7 @@ const ProductSection = ({ title, products }: ProductSectionProps) => {
     return (
         <section className="w-full max-w-screen-2xl">
             <div className="mx-4 flex flex-col gap-7 md:mx-12">
-                <p className="font-outfit text-5xl font-medium text-neutral-950 md:text-6xl">{title}</p>
+                <p className="font-outfit text-5xl font-medium text-neutral-950 md:text-6xl animate-fade animate-delay-700">{title}</p>
                 <div className="grid grid-cols-1 items-center justify-center gap-5 md:grid-cols-2 lg:grid-cols-3">
                     {products.map((product, i) => (
                         <ProductCard key={i} {...product} items={items} />
