@@ -40,7 +40,8 @@ export const metadata: Metadata = {
     twitter: {
         card: "summary_large_image",
         title: "AM Chicken | AM Chicken | Lezat Dagingnya, Sehat Tubuhnya",
-        description: "AM Chicken adalah usaha peternakan ayam yang dikelola oleh Pondok Pesantren Nurul Iman di Probolinggo. Kami berfokus pada produksi ayam organik yang sehat, lezat, dan berkualitas tinggi.",
+        description:
+            "AM Chicken adalah usaha peternakan ayam yang dikelola oleh Pondok Pesantren Nurul Iman di Probolinggo. Kami berfokus pada produksi ayam organik yang sehat, lezat, dan berkualitas tinggi.",
         images: ["images/AMChickenLogo 1.png"],
     },
 };
