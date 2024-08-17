@@ -1,10 +1,10 @@
 /* eslint-disable tailwindcss/no-arbitrary-value */
 import type { Metadata } from "next";
 
-import ProductDetails from "@/app/services/[slug]/ProductDetails";
+import ProductDetails from "@/app/products/[slug]/ProductDetails";
 
 export const metadata: Metadata = {
-    title: "Services",
+    title: "Products",
 };
 
 export default function Page({ params }: { params: { slug: string } }) {

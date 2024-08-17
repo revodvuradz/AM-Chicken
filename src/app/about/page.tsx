@@ -5,7 +5,7 @@ import Advantages from "@/components/sections/Advantages";
 import CTA from "@/components/sections/CTA";
 import Footer from "@/components/sections/Footer";
 import HeaderSection from "@/components/sections/HeaderSection";
-import imageHero from "@public/images/about/imageHero.png";
+import imageHero from "@public/images/AMChickenLogo 1.png";
 
 import Image from "next/image";
 

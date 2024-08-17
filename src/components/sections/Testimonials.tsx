@@ -2,11 +2,11 @@
 "use client";
 import type { Testimonial } from "@/types";
 
-import Clients from "@/components/sections/Clients";
+// import Clients from "@/components/sections/Clients";
 import Avatar from "@/components/ui/Avatar";
 import Button from "@/components/ui/Button";
 import Skeleton from "@/components/ui/Skeleton";
-import useSwr from "@/hooks/useSwr";
+// import useSwr from "@/hooks/useSwr";
 import { ArrowLeft, ArrowRight } from "@/lib/icons";
 import imageTesti1 from "@public/images/home/testimonials/Testi_1.png";
 import imageTesti2 from "@public/images/home/testimonials/Testi_2.png";
@@ -15,7 +15,7 @@ import imageTesti3 from "@public/images/home/testimonials/Testi_3.png";
 // eslint-disable-next-line import/order
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css/core";
-import { gql } from "graphql-request";
+// import { gql } from "graphql-request";
 import React, { useMemo, useRef } from "react";
 
 const TestimonialCard = ({ name, bio, message, imageSrc }: Testimonial) => (
@@ -119,8 +119,8 @@ const Testimonials = () => {
     };
     return (
         <section className="flex w-full items-center justify-center overflow-hidden bg-primary-50">
-            <div className="flex w-full max-w-screen-2xl shrink-0 flex-col items-center gap-[61px] px-[18px] py-16  md:px-12">
-                <Clients />
+            <div className="flex w-full max-w-screen-2xl shrink-0 flex-col items-center gap-[61px] px-[32px] py-28  md:px-12">
+                {/* <Clients /> */}
                 <div className="flex w-full max-w-[651px] flex-col items-center justify-center gap-[18px]">
                     <h1 className="items-center text-center font-outfit text-[3rem] font-semibold text-neutral-950 md:text-[4rem]">
                         Apa Kata<span className="text-info-500"> Mereka</span>?

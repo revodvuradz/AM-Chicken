@@ -4,9 +4,9 @@ import type { Advantage } from "@/types";
 
 import AdvantageCard from "@/components/cards/AdvantageCard";
 import Skeleton from "@/components/ui/Skeleton";
-import useSwr from "@/hooks/useSwr";
+// import useSwr from "@/hooks/useSwr";
 
-import { gql } from "graphql-request";
+// import { gql } from "graphql-request";
 import Image from "next/image";
 import React, { useMemo } from "react";
 
@@ -15,7 +15,7 @@ const mockAdvantages = {
         {
             id: "1",
             imageSrc: {
-                sm: "/images/home/imageBox.svg",
+                sm: "/images/imageVerify.svg",
             },
             name: "Produk Aman",
             message: "Ayam organik tanpa bahan kimia, aman dikonsumsi.",
@@ -26,7 +26,7 @@ const mockAdvantages = {
         {
             id: "2",
             imageSrc: {
-                sm: "/images/home/imageTimerPause.svg",
+                sm: "/images/imageArrowUp.svg",
             },
             name: "Nutrisi Tinggi",
             message: "Pakan alami menghasilkan daging dan telur bergizi.",
@@ -37,7 +37,7 @@ const mockAdvantages = {
         {
             id: "3",
             imageSrc: {
-                sm: "/images/home/imageMonitor.svg",
+                sm: "/images/imageLike.svg",
             },
             name: "Rasa Otentik",
             message: "Daging lebih kenyal, rasa lebih gurih",
@@ -48,7 +48,7 @@ const mockAdvantages = {
         {
             id: "4",
             imageSrc: {
-                sm: "/images/home/imageNote.svg",
+                sm: "/images/imageHouse.svg",
             },
             name: "Ramah Lingkungan",
             message: "Peternakan ramah lingkungan, memperhatikan kesejahteraan hewan.",
@@ -92,11 +92,11 @@ const Advantages = () => {
             <div className="relative mx-4 flex flex-row gap-8 md:mx-12">
                 <div className="flex flex-col justify-between gap-2">
                     <span className="font-outfit text-3xl/6 font-semibold text-info-500">Why Choose Us</span>
-                    <h1 className="font-outfit text-4xl font-medium text-neutral-700 md:text-7xl">
+                    <h1 className="font-outfit text-5xl font-medium text-neutral-700 md:text-7xl">
                         Mengapa Memilih <span className="font-outfit text-orange-300">AM Chicken</span>
                     </h1>
                 </div>
-                <Image src="images/home/imageMug.svg" width={99} height={103} alt="Mug" className="absolute right-0 top-0 -z-10 size-auto" />
+                <Image src="images/bg-deco-green.svg" width={99} height={103} alt="Mug" className="absolute right-0 top-0 -z-10 size-auto" />
             </div>
             <div className="mx-4 grid grid-cols-1 gap-4 md:mx-12 md:grid-cols-2 lg:grid-cols-4">
                 {isLoading

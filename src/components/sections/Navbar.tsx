@@ -26,12 +26,8 @@ export const navLinks: NavLink[] = [
         href: ROUTES.ABOUT,
     },
     {
-        label: "Services",
-        href: ROUTES.SERVICES,
-    },
-    {
-        label: "Portfolio",
-        href: ROUTES.PORTFOLIO,
+        label: "Products",
+        href: ROUTES.PRODUCTS,
     },
 ];
 
@@ -121,7 +117,7 @@ const Navbar = () => {
                             </li>
                         );
                     })}
-                    <Button asLink size="medium" href="https://wa.me/628117272323" className="ts-sm-tight hidden bg-green-500 text-white md:flex">
+                    <Button asLink size="medium" href="https://wa.me/6289509028393" className="ts-sm-tight hidden bg-green-500 text-white md:flex">
                         <Whatsapp color="#FFFFFF" variant="Bold" width={20} height={20} />
                         Kontak Kami
                     </Button>

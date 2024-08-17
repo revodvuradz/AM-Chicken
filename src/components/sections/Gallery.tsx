@@ -1,10 +1,10 @@
 /* eslint-disable tailwindcss/no-arbitrary-value */
-import { CpuCharge, Like, Mask } from "@/lib/icons";
-import imageGallery1 from "@public/images/organik-2.jpg";
-import imageGallery2 from "@public/images/organik-3.jpg";
+import { TaskSquare, LikeShapes, Blur } from "@/lib/icons";
 import imageGallery3 from "@public/images/bibit-1.jpg";
 import imageGallery4 from "@public/images/jamu-1.jpg";
 import imageGallery5 from "@public/images/jamu-3.jpg";
+import imageGallery1 from "@public/images/organik-2.jpg";
+import imageGallery2 from "@public/images/organik-3.jpg";
 
 import Image from "next/image";
 import React from "react";
@@ -30,7 +30,7 @@ const Gallery = () => {
                         />
                     </div>
                     <div className="flex w-full items-center justify-center gap-[10px] rounded-[14px] bg-secondary-100 p-[18px]">
-                        <Mask color="#862AF3" size={36} variant="Bold" />
+                        <LikeShapes color="#862AF3" size={36} variant="Bold" />
                         <span className="ts-title-2 whitespace-nowrap text-center font-outfit font-normal text-secondary-600 md:ts-lg-none lg:ts-title-2">Pakan Organik</span>
                     </div>
                     <div className="relative aspect-[435/290] w-full">
@@ -55,14 +55,14 @@ const Gallery = () => {
                         />
                     </div>
                     <div className="flex w-full items-center justify-center gap-[10px] rounded-[14px] bg-orange-100 p-[18px]">
-                        <CpuCharge color="#F06806" size={36} variant="Bold" />
-                        <span className="ts-title-2 text-center font-outfit font-normal text-orange-300 md:ts-lg-none lg:ts-title-2">Perawatan Berkala</span>
+                        <TaskSquare color="#F06806" size={36} variant="Bold" />
+                        <span className="ts-title-2 text-center font-outfit font-normal text-orange-500 md:ts-lg-none lg:ts-title-2">Perawatan Berkala</span>
                     </div>
                 </div>
 
                 <div className="flex flex-col items-start gap-5">
                     <div className="flex w-full items-center justify-center gap-[10px] rounded-[14px] bg-green-100 p-[18px]">
-                        <Like color="#259446" size={36} variant="Bold" />
+                        <Blur color="#259446" size={36} variant="Bold" />
                         <span className="ts-title-2 text-center font-outfit font-normal text-green-600 md:ts-lg-none lg:ts-title-2">Jamu dan Vitamin</span>
                     </div>
 
