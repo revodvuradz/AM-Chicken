@@ -75,7 +75,7 @@ const Footer = () => {
                     <Link href="https://www.tiktok.com/@a.m_chicken" target="_blank" rel="noopener noreferrer">
                         <IconBrandTiktok />
                     </Link>
-                    <Link href="https://www.facebook.com/a.m_chicken" target="_blank" rel="noopener noreferrer">
+                    <Link href="hhttps://www.facebook.com/profile.php?id=61564067364019&sfnsn=wiwspwa&mibextid=RUbZ1f" target="_blank" rel="noopener noreferrer">
                         <IconBrandFacebook />
                     </Link>
                 </div>

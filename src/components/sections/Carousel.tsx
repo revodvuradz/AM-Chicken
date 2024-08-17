@@ -64,7 +64,7 @@ const Carousel = () => {
                     id: "1",
                     name: "Slider 1",
                     description: "Ayam organik berkualitas dari AM Chicken – Sehat, lezat, alami.",
-                    href: "/slider-1",
+                    href: "https://www.instagram.com/a.m_chicken",
                     image: {
                         original: imageCarousel1.src,
                     },
@@ -76,7 +76,7 @@ const Carousel = () => {
                     id: "2",
                     name: "Slider 2",
                     description: "Nikmati rasa asli ayam organik untuk gaya hidup sehat.",
-                    href: "/slider-2",
+                    href: "https://www.instagram.com/a.m_chicken",
                     image: {
                         original: imageCarousel3.src,
                     },
@@ -86,9 +86,9 @@ const Carousel = () => {
                 },
                 {
                     id: "3",
-                    name: "Slider 2",
+                    name: "Slider 3",
                     description: "Kualitas terbaik dari peternakan ke meja Anda.",
-                    href: "/slider-2",
+                    href: "https://www.instagram.com/a.m_chicken",
                     image: {
                         original: imageCarousel4.src,
                     },

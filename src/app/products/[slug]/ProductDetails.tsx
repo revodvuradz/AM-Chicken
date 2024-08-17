@@ -36,14 +36,14 @@ const ProductDetails = (params: { slug: string }) => {
                             id: "p1",
                             name: "Ayam Joper",
                             thumbnailSrc: {
-                                md: "/images/joper-1.jpg",
+                                original: "/images/joper-1.jpg",
                             },
                         },
                         {
                             id: "p2",
                             name: "Ayam Joper - Paket Spesial",
                             thumbnailSrc: {
-                                md: "/images/joper-2.jpg",
+                                original: "/images/joper-2.jpg",
                             },
                         },
                     ],
@@ -59,14 +59,14 @@ const ProductDetails = (params: { slug: string }) => {
                             id: "p3",
                             name: "Ayam Arab",
                             thumbnailSrc: {
-                                md: "/images/arab-1.jpg",
+                                original: "/images/arab-1.jpg",
                             },
                         },
                         {
                             id: "p4",
                             name: "Ayam Arab - Super",
                             thumbnailSrc: {
-                                md: "/images/arab-2.jpg",
+                                original: "/images/arab-2.jpg",
                             },
                         },
                     ],
@@ -82,14 +82,14 @@ const ProductDetails = (params: { slug: string }) => {
                             id: "p5",
                             name: "Bibit Ayam DOC",
                             thumbnailSrc: {
-                                md: "/images/doc-1.jpg",
+                                original: "/images/doc-1.jpg",
                             },
                         },
                         {
                             id: "p6",
                             name: "Bibit Ayam DOC - Super",
                             thumbnailSrc: {
-                                md: "/images/doc-2.jpg",
+                                original: "/images/ramahLingkungan-1.jpg",
                             },
                         },
                     ],
@@ -104,14 +104,14 @@ const ProductDetails = (params: { slug: string }) => {
                             id: "p7",
                             name: "Telur Ayam Kampung",
                             thumbnailSrc: {
-                                md: "/images/telur-kampung-1.jpg",
+                                original: "/images/telur1.jpg",
                             },
                         },
                         {
                             id: "p8",
                             name: "Telur Ayam Kampung - Paket Hemat",
                             thumbnailSrc: {
-                                md: "/images/telur-kampung-2.jpg",
+                                original: "/images/telur-2.jpg",
                             },
                         },
                     ],

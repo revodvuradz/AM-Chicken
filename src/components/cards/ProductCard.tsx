@@ -23,7 +23,7 @@ type ServiceCardProps = {
     items: ItemType[];
 };
 
-const ServiceCard = ({ icon: Icon, iconColor, label, items }: ServiceCardProps) => {
+const ProductCard = ({ icon: Icon, iconColor, label, items }: ServiceCardProps) => {
     const [isHovering, setIsHovering] = useState(false);
     const [isFocused, setIsFocused] = useState(false);
     const shouldRotateIcon = Icon === BatteryEmpty;
@@ -63,4 +63,4 @@ const ServiceCard = ({ icon: Icon, iconColor, label, items }: ServiceCardProps) 
     );
 };
 
-export default ServiceCard;
+export default ProductCard;
