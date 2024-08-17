@@ -53,7 +53,7 @@ const PortfolioCategories = () => {
                 : portfolios.map((portfolio, index) => {
                       const imagePath = portfolio.thumbnailSrc?.original || "https://via.placeholder.com/400";
                       return (
-                          <Link key={portfolio.id} href={`${ROUTES.PORTFOLIO}/${slugify(portfolio.name!)}`}>
+                          <Link key={portfolio.id} href={`${ROUTES.PRODUCTS}/${slugify(portfolio.name!)}`}>
                               <div
                                   className={mc(
                                       "relative aspect-square cursor-pointer overflow-hidden rounded-xl bg-gray-200 bg-cover bg-center transition-transform",

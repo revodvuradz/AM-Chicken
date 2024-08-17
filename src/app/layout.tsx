@@ -23,15 +23,15 @@ export const metadata: Metadata = {
         template: "%s | AM Chicken",
         default: "AM Chicken",
     },
-    metadataBase: new URL("https://new.kamilaprinting.com"),
+    metadataBase: new URL("https://amchicken.com"),
     description: "Lezat Dagingnya, Sehat Tubuhnya",
     openGraph: {
         type: "website",
-        title: "AM Chicken | Premium Giftbox, Printing & Packaging",
+        title: "AM Chicken | Lezat Dagingnya, Sehat Tubuhnya",
         description: "KAMILA, perusahaan percetakan terkemuka, menawarkan layanan cetak berkualitas tinggi. Fasilitas modern dan efisiensi tinggi untuk kepuasan pelanggan.",
         images: [
             {
-                url: "https://res.cloudinary.com/dpzpaebgz/image/upload/v1702050444/kamila-printing.png",
+                url: "/images/AMChickenLogo 1.png",
                 alt: "AM Chicken website preview",
             },
         ],

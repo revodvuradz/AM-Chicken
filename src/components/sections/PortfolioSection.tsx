@@ -4,42 +4,123 @@ import type { Portfolio } from "@/types";
 
 import Button from "@/components/ui/Button";
 import Skeleton from "@/components/ui/Skeleton";
-import useSwr from "@/hooks/useSwr";
 import { ROUTES } from "@/lib/functions/constants";
-import imageMug from "@public/images/mug-decoration.svg";
+import imageDeco from "@public/images/bg-deco-orange.svg";
 
-import { gql } from "graphql-request";
 import { ArrowRight } from "iconsax-react";
 import Image from "next/image";
 import React, { useMemo } from "react";
 
 const PortfolioSection = () => {
-    const gqlQuery = gql`
-        query getPortfolios($keyword: String) {
-            portfolios(keyword: $keyword, limit: 1000) {
-                items {
-                    id
-                    name
-                    body
-                    thumbnailSrc {
-                        original
-                    }
-                    basic {
-                        isActive
-                    }
-                    images {
-                        id
-                        pathSrc {
-                            original
-                        }
-                    }
-                }
-            }
-        }
-    `;
+    //     const gqlQuery = gql`
+    //         query getPortfolios($keyword: String) {
+    //             portfolios(keyword: $keyword, limit: 1000) {
+    //                 items {
+    //                     id
+    //                     name
+    //                     body
+    //                     thumbnailSrc {
+    //                         original
+    //                     }
+    //                     basic {
+    //                         isActive
+    //                     }
+    //                     images {
+    //                         id
+    //                         pathSrc {
+    //                             original
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     `;
 
-    const { data, isLoading } = useSwr(gqlQuery);
+    const mockData = {
+        portfolios: {
+            items: [
+                {
+                    id: "1",
+                    name: "Ayam Joper",
+                    body: "Ayam Joper adalah hasil persilangan antara ayam kampung dengan ayam broiler, dikenal dengan pertumbuhan cepat dan kualitas daging yang baik.",
+                    thumbnailSrc: {
+                        original: "/images/joper-1.jpg",
+                    },
+                    basic: {
+                        isActive: true,
+                    },
+                    images: [
+                        {
+                            id: "1-1",
+                            pathSrc: {
+                                original: "/images/joper-1.jpg",
+                            },
+                        },
+                    ],
+                },
+                {
+                    id: "2",
+                    name: "Ayam Arab",
+                    body: "Ayam Arab dikenal dengan produktivitas telur yang tinggi dan ketahanan yang baik terhadap penyakit.",
+                    thumbnailSrc: {
+                        original: "/images/arab-1.jpg",
+                    },
+                    basic: {
+                        isActive: true,
+                    },
+                    images: [
+                        {
+                            id: "2-1",
+                            pathSrc: {
+                                original: "/images/arab-1.jpg",
+                            },
+                        },
+                    ],
+                },
+                {
+                    id: "3",
+                    name: "Bibit Ayam DOC",
+                    body: "Bibit Ayam DOC berkualitas yang siap dipelihara untuk menghasilkan ayam sehat dan berkualitas.",
+                    thumbnailSrc: {
+                        original: "/images/agen-3.jpeg",
+                    },
+                    basic: {
+                        isActive: true,
+                    },
+                    images: [
+                        {
+                            id: "3-1",
+                            pathSrc: {
+                                original: "/images/agem-3.jpeg",
+                            },
+                        },
+                    ],
+                },
+                {
+                    id: "4",
+                    name: "Telur Ayam Kampung",
+                    body: "Telur Ayam Kampung organik yang kaya nutrisi, baik untuk kesehatan dan memiliki rasa yang lebih gurih.",
+                    thumbnailSrc: {
+                        original: "/images/agen-2.jpeg",
+                    },
+                    basic: {
+                        isActive: true,
+                    },
+                    images: [
+                        {
+                            id: "4-1",
+                            pathSrc: {
+                                original: "/images/agen-2.jpeg",
+                            },
+                        },
+                    ],
+                },
+            ],
+        },
+    };
 
+    const data = mockData;
+    const isLoading = false;
     const items = useMemo<Portfolio[]>(() => {
         return data?.portfolios?.items || [];
     }, [data]);
@@ -109,7 +190,7 @@ const PortfolioSection = () => {
                         </div>
                         <div className="flex w-full max-w-[548px] flex-col gap-8">
                             <div className="relative flex flex-col items-start gap-[18px]">
-                                <Image src={imageMug} width={99} height={103} alt="Mug Mockup" className="absolute -right-5 z-0 size-auto" />
+                                <Image src={imageDeco} width={99} height={103} alt="Background Decos" className="absolute -right-5 z-0 size-auto" />
                                 <span className="ts-title-3 font-outfit font-semibold text-orange-300">Agen & Reseller</span>
                                 <h1 className="z-10 font-outfit text-[64px] font-medium leading-none text-neutral-700">
                                     Gabung Bersama<span className="text-info-500"> Kami</span>
@@ -118,8 +199,8 @@ const PortfolioSection = () => {
                             <p className="ts-lg-normal font-inter font-normal text-neutral-600">
                                 Jadilah agen atau reseller AM Chicken. Dapatkan dukungan penuh dan akses ke produk ayam organik yang diminati pasar. Hubungi kami untuk bergabung!
                             </p>
-                            <Button asLink size="large" style="outline" href={ROUTES.PORTFOLIO} className="text-primary-500">
-                                Selengkapnya
+                            <Button asLink size="large" style="outline" href={ROUTES.ABOUT} className="text-primary-500">
+                                Tentang Kami
                                 <ArrowRight color="#35bb5d" size={24} variant="Outline" />
                             </Button>
                         </div>

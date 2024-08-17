@@ -35,7 +35,7 @@ const ServiceCard = ({ icon: Icon, iconColor, label, items }: ServiceCardProps) 
             key={category?.id}
             onFocus={() => setIsFocused(true)}
             onBlur={() => setIsFocused(false)}
-            href={`${ROUTES.SERVICES}/${category?.slug || slugify(label)}`}
+            href={`${ROUTES.PRODUCTS}/${category?.slug || slugify(label)}`}
             className="rounded-xl focus:border-primary-300 focus:outline-none focus:ring"
         >
             <section
@@ -48,7 +48,7 @@ const ServiceCard = ({ icon: Icon, iconColor, label, items }: ServiceCardProps) 
                 </div>
 
                 <p className={mc("line-clamp-1 font-outfit text-3xl font-normal md:text-3xl z-20 text-neutral-950 duration-300", "group-hover:text-white", isFocused && "text-white")}>{label}</p>
-                <div className={mc("absolute inset-0 overflow-hidden rounded-xl opacity-0 duration-300 ease-in-out", "group-hover:opacity-100", isFocused && "opacity-100")}>
+                <div className={mc("absolute inset-0 opacity-0 overflow-hidden rounded-xl opacity-0 duration-300 ease-in-out", "group-hover:opacity-100", isFocused && "opacity-100")}>
                     <div className="absolute inset-0 z-10 bg-black/[.35]" />
                     <Image
                         src={category?.products[0]?.thumbnailSrc?.md || (category?.products[0]?.images && category.products[0].images[0].pathSrc.md) || "https://via.placeholder.com/400x600"}

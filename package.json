@@ -34,6 +34,8 @@
         "@netlify/ipx": "^1.4.6",
         "@netlify/plugin-nextjs": "^4.41.3",
         "@splidejs/react-splide": "^0.7.12",
+        "@tabler/icons": "^3.12.0",
+        "@tabler/icons-react": "^3.12.0",
         "@tailwindcss/typography": "^0.5.10",
         "axios": "^1.6.2",
         "clsx": "^2.0.0",

@@ -21,4 +21,6 @@ export {
     Mask,
     ExportCircle,
     HambergerMenu,
+    LikeShapes,
+    Blur,
 } from "iconsax-react";
