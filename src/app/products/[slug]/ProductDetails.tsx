@@ -43,7 +43,7 @@ const ProductDetails = (params: { slug: string }) => {
                             id: "p2",
                             name: "Ayam Joper - Paket Spesial",
                             thumbnailSrc: {
-                                original: "/images/joper-2.jpg",
+                                original: "/images/carousel/ayam-organik-3.jpg",
                             },
                         },
                     ],
@@ -66,7 +66,7 @@ const ProductDetails = (params: { slug: string }) => {
                             id: "p4",
                             name: "Ayam Arab - Super",
                             thumbnailSrc: {
-                                original: "/images/arab-2.jpg",
+                                original: "/images/carousel/ayam-orgnaik-1.jpg",
                             },
                         },
                     ],
@@ -82,14 +82,14 @@ const ProductDetails = (params: { slug: string }) => {
                             id: "p5",
                             name: "Bibit Ayam DOC",
                             thumbnailSrc: {
-                                original: "/images/doc-1.jpg",
+                                original: "/images/doc-1.jpeg",
                             },
                         },
                         {
                             id: "p6",
                             name: "Bibit Ayam DOC - Super",
                             thumbnailSrc: {
-                                original: "/images/ramahLingkungan-1.jpg",
+                                original: "/images/bibit-1.jpg",
                             },
                         },
                     ],
@@ -104,14 +104,7 @@ const ProductDetails = (params: { slug: string }) => {
                             id: "p7",
                             name: "Telur Ayam Kampung",
                             thumbnailSrc: {
-                                original: "/images/telur1.jpg",
-                            },
-                        },
-                        {
-                            id: "p8",
-                            name: "Telur Ayam Kampung - Paket Hemat",
-                            thumbnailSrc: {
-                                original: "/images/telur-2.jpg",
+                                original: "/images/telur-1.jpg",
                             },
                         },
                     ],
@@ -127,14 +120,14 @@ const ProductDetails = (params: { slug: string }) => {
                             id: "p9",
                             name: "Pakan Organik",
                             thumbnailSrc: {
-                                md: "/images/pakan-1.jpg",
+                                original: "/images/organik-1.jpg",
                             },
                         },
                         {
                             id: "p10",
                             name: "Pakan Organik GMO - Premium",
                             thumbnailSrc: {
-                                md: "/images/pakan-2.jpg",
+                                original: "/images/organik-2.jpg",
                             },
                         },
                     ],
@@ -150,14 +143,14 @@ const ProductDetails = (params: { slug: string }) => {
                             id: "p11",
                             name: "Jamu Herbal Ayam",
                             thumbnailSrc: {
-                                md: "/images/jamu-1.jpg",
+                                original: "/images/jamu-1.jpg",
                             },
                         },
                         {
                             id: "p12",
                             name: "Vitamin Ayam",
                             thumbnailSrc: {
-                                md: "/images/vitamin-1.jpg",
+                                original: "/images/jamu-3.jpg",
                             },
                         },
                     ],
