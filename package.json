@@ -17,7 +17,7 @@
     "scripts": {
         "dev": "start http://localhost:3000 && next dev",
         "dev:static": "serve ./out",
-        "build": "next build && next export",
+        "build": "next build",
         "start": "next start",
         "lint": "next lint",
         "git:prepare": "husky install"
