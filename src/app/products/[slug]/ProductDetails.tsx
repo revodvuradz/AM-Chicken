@@ -120,7 +120,7 @@ const ProductDetails = (params: { slug: string }) => {
                             id: "p9",
                             name: "Pakan Organik",
                             thumbnailSrc: {
-                                original: "/images/organik-1.jpg",
+                                original: "/images/organik-3.jpg",
                             },
                         },
                         {
